@@ -57,7 +57,7 @@ source._split_once = function(str, sep)
 end
 
 source.complete = function(self, params, cmp_callback)
-	local command = "opam exec -- forester complete forest.toml"
+	local command = "(cd ~/nixt/fst/ && opam exec -- forester complete forest.toml)"
 
 	local callback = function(lines)
 		local items = {}
